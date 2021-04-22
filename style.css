@@ -1,29 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-.container{ 
-    
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-button{
-    font-size: 19px;
-    margin: 5px;
-    width: 50px;   
-    height: 50px;
-    border-radius: 25px;
-    background-color: white;
-    border: none;
-    box-shadow: 1px 2px 4px rgb(255, 157, 173);
-
-}
-button:active{
-    box-shadow: none;
-    transform: translate(1px, 2px);
+@font-face {
+  font-family: "Digital";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./digital-7/digital-7.ttf");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Digital;
+  user-select: none;
+}
+
+.title {
+  margin: 2rem;
+  font-size: 3.5rem;
+  color: aliceblue;
+}
+
+.container {
+  padding-top: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: initial;
+  background: url('img/cbi.webp');
+  background-repeat:no-repeat ;
+  background-size: cover;
+}
+button {
+  font-size: 19px;
+  margin: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  border: none;
+  box-shadow: 1px 2px 4px rgb(255, 157, 173);
+  font-family: Digital;
+}
+button:active {
+  box-shadow: none;
+  transform: translate(1px, 2px);
+  background-color: rgb(255, 157, 173);
+}
+button:focus {
+  border: none;
+  box-shadow: none;
+
+}
+
+.input {
+  border: 1px solid rgb(255, 157, 173);
+  height: 50px;
+  width: 18rem;
+  font-family: Digital;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: text;
+  color: aliceblue;
+  text-overflow: ellipsis;
+}
+footer {
+  display: flex;
+  color: rgb(9, 6, 6);
+  background-color: rgb(174, 95, 95);
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+footer  :hover {
+
+ color: white;
+
+}
+
+.screen p {
+  width: 100%;
+}
