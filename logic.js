@@ -25,7 +25,7 @@ for (item of buttons) {
       screenValue += buttonText;
       screen.innerText = screenValue;
     } else if (buttonText == "C") {
-      screenValue = screenValue.slice(0, buttonText.length - 2);
+      screenValue = screenValue.slice(0, buttonText.length - 3);
       screen.innerText = screenValue;
 
     } else {
