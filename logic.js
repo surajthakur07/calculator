@@ -16,7 +16,7 @@ for (item of buttons) {
       screenValue = "";
       screen.innerText = screenValue;
     } else if (buttonText == "=") {
-      screenValue = screenValue.replace(" ", "")
+      screenValue = screenValue.replaceAll(" ", "")
       screenValue = eval(screenValue);
       screen.innerText = screenValue;
       screenValue = "";
