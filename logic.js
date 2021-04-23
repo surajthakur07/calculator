@@ -4,22 +4,23 @@ console.log(screen);
 let screenValue = "";
 buttons = document.querySelectorAll("button");
 for (item of buttons) {
-
+  
   item.addEventListener("click", (e) => {
     let buttonText = e.target.innerText;
 
     if (buttonText == "x") {
-      buttonText = " * ";
+      buttonText = "* ";
       screenValue += buttonText;
       screen.innerText = screenValue;
     } else if (buttonText == "AC") {
       screenValue = "";
       screen.innerText = screenValue;
     } else if (buttonText == "=") {
+      screenValue = screenValue.replace(" ", "")
       screenValue = eval(screenValue);
       screen.innerText = screenValue;
     } else if (buttonText == "÷") {
-      buttonText = " / ";
+      buttonText = "/ ";
       screenValue += buttonText;
       screen.innerText = screenValue;
     } else if (buttonText == "C") {
@@ -27,7 +28,7 @@ for (item of buttons) {
       screen.innerText = screenValue;
 
     } else {
-     screenValue += buttonText ;
+     screenValue += `${buttonText} ` ;
       screen.innerText =  screenValue ;
 
     }
