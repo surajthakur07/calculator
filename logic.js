@@ -1,4 +1,6 @@
-let screen = document.getElementById("screen");
+let screen = document.getElementById("input");
+console.log(screen);
+
 let screenValue = "";
 buttons = document.querySelectorAll("button");
 for (item of buttons) {
@@ -6,7 +8,7 @@ for (item of buttons) {
     let buttonText = e.target.innerText;
     console.log("Button text is", buttonText);
     if (buttonText == "x") {
-      buttonText = "*";
+      buttonText = " * ";
       screenValue += buttonText;
       screen.innerText = screenValue;
     } else if (buttonText == "AC") {
@@ -16,7 +18,7 @@ for (item of buttons) {
       screenValue = eval(screenValue);
       screen.innerText = screenValue;
     } else if (buttonText == "÷") {
-      buttonText = "/";
+      buttonText = " / ";
       screenValue += buttonText;
       screen.innerText = screenValue;
     } else if (buttonText == "C") {
@@ -24,7 +26,8 @@ for (item of buttons) {
       screen.innerText = screenValue;
     } else {
       screenValue += buttonText;
-      screen.innerText = screenValue;
+      screen.innerText =  screenValue ;
+      console.log(screenValue);
     }
   });
 }
