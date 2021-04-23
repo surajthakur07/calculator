@@ -19,6 +19,7 @@ for (item of buttons) {
       screenValue = screenValue.replace(" ", "")
       screenValue = eval(screenValue);
       screen.innerText = screenValue;
+      screenValue = "";
     } else if (buttonText == "÷") {
       buttonText = "/ ";
       screenValue += buttonText;
